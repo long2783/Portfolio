@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -91,7 +94,7 @@ header {
   left: 0;
   width: 60%;
   height: 100%;
-  background-color: var(--gray);
+  background-color: #FFCC66;
   z-index: 5;
   transition: var(--smooth);
   transform: translateX(-100%);
@@ -111,13 +114,13 @@ header {
 
 .navbar__link a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-weight: 300;
   transition: var(--smooth);
 }
 
 .navbar__link a:hover {
-  color: var(--green);
+  color: blue;
   transition: var(--smooth);
 }
 
@@ -214,6 +217,8 @@ header {
   top: 0;
   right: 0;
   z-index: -1;
+  transition: var(--smooth);
+  transform: translateY(120px);
 }
 
 .banner__heading {

@@ -17,20 +17,20 @@
   </head>
   <body>
     <!-- overlay -->
-    <section id="overlay"></section>
+     <section id="overlay"></section>
     <!-- header -->
-    <header>
+    <header id="header">
       <div class="container">
         <nav class="navbar">
           <!-- logo -->
           <div class="navbar__logo">
-            <img src="./img/logo.svg" alt="website logo" />
+            <img src="./img/logo-hutech.png" alt="website logo" />
           </div>
           <!-- links -->
           <ul class="navbar__links">
-            <li class="navbar__link"><a href="#works">Work</a></li>
-            <li class="navbar__link"><a href="#things">About</a></li>
-            <li class="navbar__link"><a href="#works">Resume</a></li>
+            <li class="navbar__link"><a href="#header">Home</a></li>
+            <li class="navbar__link"><a href="#things">Blog</a></li>
+            <li class="navbar__link"><a href="#dip">Certificate</a></li>
             <a href="#footer"><button class="navbar__btn">Contact</button></a>
           </ul>
           <!-- menu button -->
@@ -45,14 +45,15 @@
       <div class="container">
         <!-- img -->
         <div class="banner__img">
-          <img src="./img/banner-img.png" alt="illustration of women" />
+          <img src="./img/nenlaptop.png" alt="illustration of women" />
         </div>
         <!-- heading -->
         <div class="banner__heading">
-          <h1>Hello, I'm Lisa</h1>
+          <h1>Tôi là Phan Bảo Long</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate a
-            est culpa soluta modi beatae unde incidunt dolorem placeat maiores?
+Trang web này là nơi tôi chia sẻ những kiến thức, kinh nghiệm và bài học mà tôi tích lũy được trong quá trình học tập và thực hành lập trình, đặc biệt là về JavaScript một trong những ngôn ngữ lập trình phổ biến nhất hiện nay.
+Nếu bạn là một người yêu thích lập trình hoặc đang tìm hiểu về JavaScript, hãy cùng tôi khám phá qua các bài viết, ví dụ minh họa và dự án thú vị. Hy vọng nội dung trên trang sẽ giúp bạn học hỏi thêm nhiều điều mới mẻ!
+Cảm ơn bạn đã ghé thăm trang web của tôi!
           </p>
           <a href="#"><button class="banner__btn">View More</button></a>
           <div class="banner__socials">
@@ -75,53 +76,192 @@
           <img src="./img/things-dec-r.png" alt="illustration of leaf" />
         </div>
         <!-- heading -->
-        <h2>Things I Do</h2>
+        <h2>Một vài bài viết về Java</h2>
         <!-- item 1 -->
         <div class="things__item">
           <!-- img -->
-          <img src="./img/things-item-1.png" alt="illustration of women" />
+          <img src="./img/int.PNG" alt="illustration of women" />
           <!-- text -->
           <div class="things__item--heading">
-            <h3>Lorem Ispum</h3>
+            <h3 >1.Cách chuyển đổi int thành double trong Java</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              consequatur provident, culpa quaerat fugit dolorem illum
-              repellendus quas quasi obcaecati quia aliquid odit! Vitae, non?
+              Từ góc độ Java, các kiểu double và int cũng tương thích. Vì chuyển đổi int thành double là chuyển từ lớn hơn sang nhỏ hơn, loại chuyển đổi này gọi kiểu mở rộng hoặc mở rộng ẩn. Bạn có thể tự động chuyển int thành double trong Java bằng cách gán giá trị int cho một biến double. 
+            </p>
+            <p>
+              Số nguyên của tôi là: 10, 2147483647 <br>
+              Sau khi đánh máy/mở rộng thành gấp đôi: 10.0, 2.147483647E9<br>
+              Ghi chú: E9 ở đây có nghĩa là 109, nó được gọi là ký hiệu khoa học.<br>Lưu ý :Các số kép thường được viết với dấu chấm phân cách phần phân số. Nếu bạn khai báo một biến double và đặt một giá trị vào đó, thì không cần thiết phải làm điều này, nhưng ở đầu ra, số double sẽ luôn có một phần phân số, ngay cả khi nó bằng không.<br>
+              Thứ tự chuyển đổi từ nhỏ đến lớn : 
+              <strong>Byte -> Short -> Char -> Int -> Long -> Float -> Double </strong>
             </p>
           </div>
         </div>
         <!-- item 2 -->
         <div class="things__item">
           <!-- img -->
-          <img src="./img/things-item-2.png" alt="illustration of women" />
+          <img src="./img/2.PNG" alt="illustration of women" />
+          <img src="./img/3.PNG" alt="illustration of women" />
           <!-- text -->
           <div class="things__item--heading">
-            <h3>Lorem Ispum</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              consequatur provident, culpa quaerat fugit dolorem illum
-              repellendus quas quasi obcaecati quia aliquid odit! Vitae, non?
-            </p>
+            <h3 >2.Hệ thống.getenv()</h3>
+            <p style="margin-right: 25px;">
+              Phương thức System.getenv() được sử dụng để tìm nạp tất cả các biến môi trường nhưng nếu một tên khóa cụ thể được cung cấp làm tham số thì nó sẽ tìm nạp giá trị của nó. java.lang.System.getenv() luôn trả về bản đồ chuỗi của tất cả các biến môi trường có sẵn.<br>
+              Public static String getenv(String name). Ở đây, tên là tham số được sử dụng để chỉ định khóa mà chúng ta cần giá trị. 
+              Nó sẽ trả về giá trị của khóa hoặc null nếu tham số được cung cấp không được liên kết với bất kỳ khóa nào. Nếu tham số không được truyền thì nó sẽ trả về tất cả các cặp khóa/giá trị có sẵn. Mời bạn xem ví dụ và đầu ra của nó.</p>
           </div>
         </div>
         <!-- item 3 -->
         <div class="things__item">
           <!-- img -->
-          <img src="./img/things-item-3.png" alt="illustration of computer" />
+           <img src="./img/4.PNG" alt="illustration of computer" /> 
           <!-- text -->
           <div class="things__item--heading">
-            <h3>Lorem Ispum</h3>
+            <h3>3.LinkedHashMap trong Java là gì?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              consequatur provident, culpa quaerat fugit dolorem illum
-              repellendus quas quasi obcaecati quia aliquid odit! Vitae, non?
+              Lớp LinkedHashMap trong Java thuộc framework (Collections Framework) là một cách triển khai kết hợp giữa Hashtable và LinkedList của giao diện Map. Nó lưu trữ các mục của nó trong Hashtable và sử dụng danh sách liên kết đôi bên trong để duy trì thứ tự chèn. LinkedList này xác định thứ tự chèn là thứ tự các khóa được chèn vào Map . HashMap mang lại lợi ích cho việc chèn , tìm kiếm và xóa nhanh chóng nhưng trong LinkedHashMap việc triển khai LinkedList cũng duy trì thứ tự chèn .<br>
+              Các tính năng của LinkedHashMap :<br>
+            - Nó chứa các giá trị dựa trên khóa.<br>
+            - Nó chứa các yếu tố độc đáo.<br>
+            - Nó có thể có một khóa null và nhiều giá trị null.<br>
+            - Nó không được đồng bộ hóa.<br>
+            - Nó duy trì thứ tự chèn khiến cho việc lặp lại tốn kém hơn.<br>
+              Dung lượng :<br>
+                Dung lượng có nghĩa là số lượng mục nó có thể lưu trữ. Dung lượng mặc định là 16 nếu không cung cấp tham số. Hệ số tải Hệ số tải có nghĩa là bất cứ khi nào HashMap được điền vào một tỷ lệ phần trăm cụ thể được cung cấp dưới dạng tham số, HashMap mới sẽ được tạo có kích thước gấp đôi và tất cả các mục được chuyển sang mục mới này.
+                <br>Để tạo LinkedHashMap , trước tiên, chúng ta cần nhập gói java.util.LinkedHashMap . 
+                LinkedHashMap<Key, Value> lhm = new LinkedHashMap<>(12, 0.5f);
+                Ở đây Key là loại chìa khóa có trong bản đồ. Giá trị là loại giá trị được ánh xạ trong bản đồ. 12 là dung lượng có nghĩa là nó sẽ lưu trữ 12 mục trên bản đồ. 0,5f là hệ số tải, nghĩa là khi được điền 50% thì nó sẽ tạo Bản đồ mới và di chuyển tất cả các giá trị sang bản đồ mới này. 
             </p>
           </div>
         </div>
+         <!-- item 4 -->
+        <div class="things__item">
+          <!-- img -->
+           <img src="./img/dequy.PNG" alt="illustration of computer" /> 
+          <!-- text -->
+          <div class="things__item--heading">
+            <h3 >4.Đệ quy Java</h3>
+            <p>
+              Kịch bản trong đó một hàm hoặc phương thức tự gọi chính nó được gọi là đệ quy, và hàm hoặc phương thức đó được gọi là hàm đệ quy hoặc phương thức đệ quy. Cách tiếp cận này thường được sử dụng để chia một vấn đề phức tạp thành các vấn đề nhỏ hơn, đơn giản hơn và dễ giải quyết hơn. Một ví dụ minh họa đơn giản là khi đặt hai tấm gương đối diện nhau, chúng sẽ bắt đầu phản chiếu lẫn nhau theo cách đệ quy, tạo ra một chuỗi hình ảnh lặp lại vô tận mà bạn có thể dễ dàng quan sát.
+              <br><strong>Đệ quy gián tiếp</strong><br>
+              Ví dụ trên thể hiện phép đệ quy gián tiếp , tức là hàm một gọi hàm hai và hàm hai gọi hàm một. <br>
+              <strong>Đệ quy trực tiếp</strong><br>
+              Khi một phương thức gọi đi gọi lại chính nó, nó được gọi là đệ quy trực tiếp . <br>
+              <strong>Ưu điểm và nhược điểm của đệ quy</strong><br>
+              Mã đệ quy rất dễ viết, gỡ lỗi và bảo trì, giúp tiết kiệm thời gian. Nhưng mặt khác, với mỗi lệnh gọi, bộ nhớ sẽ bị tiêu tốn cho các biến và do đó chúng ta có thể hết bộ nhớ. 
+            </p>
+          </div>
+        </div>
+         <!-- item 5 -->
+        <div class="things__item">
+          <!-- img -->
+           <img src="./img/kethua.PNG" alt="illustration of computer" /> 
+          <!-- text -->
+          <div class="things__item--heading">
+            <h3>5.Kế thừa trong Java</h3>
+            <p>
+              Java là một ngôn ngữ hướng đối tượng. Điều này có nghĩa là mọi thứ trong Java đều bao gồm các lớp và đối tượng của chúng, đồng thời tuân theo mô hình OOP (lập trình hướng đối tượng). Một mô hình như vậy là tính kế thừa, một cơ chế trong Java mà theo đó một lớp được phép kế thừa các tính năng (trường và phương thức) của lớp khác. Nói một cách đơn giản, trong Java, kế thừa có nghĩa là tạo các lớp mới dựa trên các lớp hiện có. 
+              <br><strong>Các tác nhân chính của tính kế thừa trong Java</strong><br>
+              Kế thừa là khái niệm mà một lớp có thể lặp lại một phần hoặc hoàn toàn các thuộc tính và phương thức của lớp cha (lớp mà nó kế thừa).
+              Lớp con, lớp con, lớp mở rộng hoặc lớp dẫn xuất là lớp kế thừa từ một lớp khác.
+              Lớp cha, lớp cha hoặc lớp cơ sở là một lớp có một số hàm và các hàm này có thể được truyền (kế thừa) bởi một lớp khác (lớp con).
+              Ghi đè phương thức đang thay đổi hành vi của phương thức lớp dẫn xuất. Đây thường là hành vi cụ thể, tinh tế hơn. Nếu bạn ghi đè một phương thức trong phần thừa kế đã có trong lớp cha, thì nó sẽ thay thế phương thức cha.
+              Một lớp chỉ có thể có một lớp tổ tiên, nhưng mỗi lớp có thể có nhiều "con".<br>
+             <strong> Làm thế nào nó hoạt động</strong><br>
+            Chuỗi kế thừa được hướng từ lớp trừu tượng nhất đến lớp cụ thể hơn. Tức là siêu lớp là lớp trừu tượng nhất trong chuỗi các lớp. Thông thường nó được biểu thị là trừu tượng (lớp cơ sở không yêu cầu triển khai). Tất cả các lớp học tiếp theo đều cụ thể hơn.
+            Một lớp con kế thừa tất cả các thành viên public và protected của lớp cha. Việc lớp con nằm trong gói nào không quan trọng. Nếu lớp con nằm trong cùng gói với lớp cha, thì nó cũng kế thừa các thành viên riêng tư của gói cha. Bạn có thể sử dụng nguyên các thành viên được kế thừa, thay thế, ẩn chúng hoặc thêm thành viên mới:<br>
+            - Bạn có thể sử dụng trực tiếp các trường được kế thừa, chẳng hạn như bất kỳ trường nào khác.<br>
+            - Bạn có thể khai báo một trường trong lớp con có cùng tên với lớp cha. Nó đang che giấu nó (vì vậy tốt hơn là đừng làm điều đó).<br>
+            - Bạn có thể khai báo các trường mới trong lớp con (những trường mà lớp cha không có).<br>
+            - Các phương thức kế thừa có thể được sử dụng trực tiếp mà không cần ghi đè trong lớp dẫn xuất.<br>
+            - Ngoài ra, bạn có thể viết một phương thức cá thể mới trong một lớp con có cùng chữ ký với một phương thức trong lớp cha. Thủ tục này sẽ ghi đè lên nó.
+            <br>- Bạn có thể khai báo các phương thức mới trong lớp con chưa được khai báo trong lớp Cha.<br>
+            - Bạn có thể viết một hàm tạo của lớp con gọi hàm tạo của lớp cha một cách ngầm định hoặc bằng từ khóa super.<br>
+         </p>
+          </div>
+        </div>
+       
+         <!-- item 6 -->
+        <div class="things__item">
+          <!-- img -->
+           <img src="./img/ghide.png" alt="illustration of computer" /> 
+          <!-- text -->
+          <div class="things__item--heading">
+            <h3>6.Ba quy tắc ghi đè</h3>
+            <p>
+              Các lập trình viên Java mới gặp khó khăn trong ba quy tắc ghi đè phương thức này. Hãy đơn giản hóa các quy tắc. Lớp Parent{ (Quy tắc 1. Bộ xác định quyền truy cập ) được bảo vệ (Quy tắc 2. Loại trả về) Số dothework() ném ra (Quy tắc 3.Ngoại lệ) Ngoại lệ { } } Lớp con mở rộng Cha mẹ{ (1. bộ xác định) công khai (2. Loại trả về) Số nguyên dothework() ném (3.Exception) IOException { } } Nếu bạn biết vị trí tại (1),(2) và (3) hoạt động như thế nào, khái niệm ghi đè của bạn sẽ rõ ràng 100%. 1. Access Specifier : Bộ xác định phương thức của lớp con phải cao hơn hoặc bằng bộ xác định phương thức của lớp cha. Thứ tự của thông số xác định là (cao hơn đến thấp hơn) công khai > được bảo vệ> mặc định> riêng tư. Lưu ý rằng phương thức riêng tư không thể bị ghi đè. 2. Kiểu trả về : Bây giờ java hỗ trợ kiểu trả về đồng biến thể. Trong kiểu trả về của phương thức con, nó phải giống hoặc kiểu con của kiểu trả về phương thức cha của nó. Khi thuốc generic được sử dụng ở đây, đôi khi nó gây khó hiểu cho nhà phát triển mới. Khái niệm về kiểu trả về Co-variant sử dụng generics phải được nghiên cứu và làm rõ. 3.Ngoại lệ Nếu phương thức của lớp con ném ra bất kỳ ngoại lệ được kiểm tra nào, thì phương thức của lớp cha phải ném ra ngoại lệ tương tự hoặc kiểu cha của ngoại lệ được kiểm tra đó. Lưu ý rằng, trong trường hợp ngoại lệ không được chọn thì quy tắc đó không được áp dụng. Vì vậy, bạn phải biết loại ngoại lệ được kiểm tra và không được kiểm tra.         </p>
+          </div>
+        </div>
+        <!-- item 7 -->
+        <div class="things__item">
+          <!-- img -->
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <img src="./img/t7.PNG" alt="illustration of computer" style="width: 100%; height: auto;" />
+            <img src="./img/out7.PNG" alt="illustration of computer" style="width: 100%; height: auto;" />
+          </div>
+          <!-- text -->
+          <div class="things__item--heading">
+            <h3 style="margin-left: 20px;">7.Truyền kiểu Java</h3>
+            <p style="margin-left: 25px;">              
+               Truyền kiểu Java là một quá trình trong đó một kiểu dữ liệu được chuyển đổi sang kiểu dữ liệu khác.<br>
+               Nó có thể vừa ngầm vừa rõ ràng . Việc đánh máy ngầm còn được gọi là việc đánh máy tự động được thực hiện bởi trình biên dịch. Việc định kiểu rõ ràng được lập trình viên thực hiện thủ công trong mã. 
+             <br><strong>Tại sao cần phải ép kiểu?</strong><br>
+              Java có các kiểu dữ liệu nguyên thủy khác nhau yêu cầu các khoảng trống khác nhau trong bộ nhớ. Điều này có thể gây ra sự cố tương thích khi gán giá trị của loại dữ liệu này cho loại dữ liệu khác. Nếu các kiểu dữ liệu đã tương thích, việc gõ kiểu sẽ được trình biên dịch thực hiện tự động. Do đó, typecasting giải quyết được vấn đề tương thích chính khi xử lý các loại dữ liệu khác nhau trong chương trình của chúng ta. 
+              <br><strong>Có hai kiểu truyền kiểu trong Java.</strong><br>
+              Đúc kiểu mở rộng - Còn được gọi là Đúc kiểu ngầm hoặc tự động<br>
+              Đúc kiểu thu hẹp - Còn được gọi là Đúc kiểu rõ ràng hoặc thủ công<br>
+              Đúc loại mở rộng: <br>
+              Mở rộng việc định kiểu, đề cập đến việc mở rộng kiểu dữ liệu nhỏ hơn thành kiểu dữ liệu lớn hơn. Chúng tôi thực hiện việc định kiểu này khi chúng tôi muốn chuyển đổi loại nhỏ thành loại lớn. Các kiểu dữ liệu phải tương thích với nhau. Không có sự chuyển đổi ngầm định từ kiểu số sang kiểu char hoặc boolean. Trong Java, các kiểu char và boolean không tương thích. 
+              <br>byte -> ngắn -> char -> int -> dài -> float -> double<br>
+              Kiểu truyền này được trình biên dịch thực hiện tự động mà không làm mất thông tin. Nó không yêu cầu bất kỳ sự kích hoạt bên ngoài nào của người lập trình. 
+              <br>Thu hẹp kiểu đúc: <br>
+              Thu hẹp kiểu chữ, như tên cho thấy, đề cập đến việc thu hẹp kiểu dữ liệu lớn hơn thành kiểu dữ liệu nhỏ hơn. Chúng tôi thực hiện việc định kiểu này khi chúng tôi muốn chuyển đổi loại lớn thành loại nhỏ. 
+              <br>double -> float -> long -> int -> char -> short -> byte<br>
+              Đối với kiểu truyền này, chúng tôi ghi đè chuyển đổi mặc định của Java bằng cách chỉ định chuyển đổi của riêng chúng tôi. Để đạt được điều này, chúng ta viết biến hoặc giá trị cần được đánh máy trước kiểu dữ liệu đích trong dấu ngoặc đơn '()'. Tuy nhiên, kiểu đúc này có thể dẫn đến mất độ chính xác. 
+            </p>
+          </div>
+        </div>
+         <!-- item 8 -->
+         <div class="things__item">
+          <!-- img -->
+           <img src="./img/8.PNG" alt="illustration of computer" /> 
+          <!-- text -->
+          <div class="things__item--heading">
+            <h3>8.Làm cách nào để tránh ConcurrentModificationException trong Java? </h3>
+            <p>
+              “Ngoại lệ ConcurrentModificationException xảy ra khi một tài nguyên bị sửa đổi trong khi không có đặc quyền sửa đổi.”
+              Nói cách khác, Ngoại lệ Java ConcurrentModificationException (như tên gợi ý) xảy ra do vấn đề tương tranh. Giả định rằng bạn có kiến ​​thức trước về <a href="https://en.wikipedia.org/wiki/Thread_(computing)"target="_blank">luồng</a>
+              và <a href="https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)" target="_blank">đa luồng</a>
+              trước khi tiếp tục. Một số lớp trong Java, như các lớp Bộ sưu tập, không cho phép một luồng sửa đổi một phần tử trong khi một luồng khác đang lặp lại nó. Nếu thao tác sửa đổi (thêm, xóa, v.v.) được thực hiện, chương trình sẽ đưa ra ConcurrentModificationException . Đây không phải là trường hợp duy nhất xảy ra ngoại lệ này. Tuy nhiên, việc đào sâu hơn sẽ vượt ra ngoài phạm vi của bài viết này.         </p>
+          </div>
+          <div class="things__item--heading" style="margin: 25px;">
+            <h3>Ngoại lệ sửa đổi đồng thời trong Java</h3>
+            <p>
+              Có nhiều cách giải quyết khác nhau cho ConcurrentModificationException . Dưới đây là nhập ngũ một số. Bạn có thể lựa chọn bất cứ ai theo nhu cầu của bạn.
+              <br>Tránh sửa đổi trong khi lặp lại.<br>
+            1.Sử dụng các vòng lặp truyền thống để lặp lại và sửa đổi đồng thời.<br>
+            2.Tạo bản sao của các giá trị cần sửa đổi trong khi sử dụng trình vòng lặp.<br>
+            3.Cập nhật các giá trị sau khi quá trình lặp kết thúc.<br>
+                      </p>
+          </div>
+        </div>
+      </div>
+      <!-- item 9 -->
+      <div class="things__item">
+       <!-- img -->
+        <img src="./img/6.PNG" alt="illustration of computer" /> 
+       <!-- text -->
+       <div class="things__item--heading">
+         <h3>9.Bộ sưu tập sách và video hay nhất để củng cố kiến thức của bạn</h3>
+         <p>
+         Theo Chỉ số TIOBE tháng 7 năm 2022, Java vẫn là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới dù đã tồn tại hơn 25 năm và xuất hiện nhiều ngôn ngữ lập trình mới mẻ. Không có gì ngạc nhiên khi nó cũng là một trong những ngôn ngữ có cơ sở dữ liệu rộng lớn nhất. Không thiếu các bài viết, hướng dẫn, sách, trang web, cộng đồng, blog Youtube và các tài liệu khác có thể giúp bạn học nó một cách nhanh chóng và hiệu quả. Nhưng trong khi một số trong số chúng cung cấp cái nhìn tổng quan về các khái niệm Java khác nhau, thì một số khác lại cung cấp phân tích chuyên sâu về các chủ đề Java cụ thể. Và để giúp bạn tìm được "công cụ hỗ trợ" học tập cho mọi nhu cầu của mình, chúng tôi đã phát triển hướng dẫn này gồm các sách, video hay nhất về Java, v.v. 
+      </p>
+      <a href="https://codegym.cc/groups/posts/top-6-java-books" target="_blank" rel="noopener noreferrer">6 cuốn sách hay nhất về java cho người mới bắt đầu"</a>
+       </div>
+     </div>
       </div>
     </section>
     <!-- works -->
-    <section id="works">
+    <section id="dip"  style="margin-top: 50px;">
       <div class="container">
         <!-- dec -->
         <div class="works__dec">
@@ -135,16 +275,16 @@
         <!-- img -->
         <div class="works__img">
           <div class="works__img--single">
-            <img src="./img/work-1.png" alt="bag" />
+            <img src="./img/Nwbasic.PNG" alt="bag" />
           </div>
           <div class="works__img--single">
-            <img src="./img/work-2.png" alt="plate" />
+            <img src="./img/Nwbasic.PNG" alt="bag" />
           </div>
           <div class="works__img--single">
-            <img src="./img/work-3.png" alt="women" />
+            <img src="./img/Nwbasic.PNG" alt="bag" />
           </div>
           <div class="works__img--single">
-            <img src="./img/work-4.png" alt="piggy bank" />
+            <img src="./img/things-item-2.png" alt="bag" />
           </div>
         </div>
         <!-- btn -->
@@ -169,13 +309,13 @@
           <h1>Ready to make something amazing?</h1>
           <!-- contact -->
           <div class="footer__contact">
-            <a href="tel:901234567">
+            <a href="tel:0338994564">
               <i class="fas fa-phone-alt"></i>
-              <p>90-123-4567</p>
+              <p>0338994564</p>
             </a>
-            <a href="mailto:info@me.com">
+            <a href="mailto:pblong2703@gmail.com.com">
               <i class="fas fa-envelope"></i>
-              <p>info@me.com</p>
+              <p>pblong2703@gmail.com</p>
             </a>
           </div>
           <div class="banner__socials">
